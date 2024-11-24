@@ -4,7 +4,7 @@ public class FireAOE : MonoBehaviour
 {
     [SerializeField]
     MeshCollider m_collider;
-    float duration = 1;
+    float duration = 5;
     float delay = 0.2f;
     float damage = 0.2f;
     float size = 5;

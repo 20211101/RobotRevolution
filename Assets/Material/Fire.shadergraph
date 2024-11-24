@@ -67,41 +67,13 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "016c020fe7474e8ea7171edab56924d0"
+                    "m_Id": "13c6fccccec840d09651d6394dd13bae"
                 },
-                "m_SlotId": 2
+                "m_SlotId": 0
             },
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "7edc1e3c2bb04087820e4de545b3d5e9"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "13c6fccccec840d09651d6394dd13bae"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "016c020fe7474e8ea7171edab56924d0"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "13c6fccccec840d09651d6394dd13bae"
-                },
-                "m_SlotId": 7
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "4824c2015ed74639b10192160441611e"
                 },
                 "m_SlotId": 0
             }
@@ -139,27 +111,13 @@
                 "m_Node": {
                     "m_Id": "3d17ee86319d44f1bebbe3b1c476c8ab"
                 },
+                "m_SlotId": 7
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "4824c2015ed74639b10192160441611e"
+                },
                 "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "016c020fe7474e8ea7171edab56924d0"
-                },
-                "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "421f188ffbfa42fc9e7550a64f197dc2"
-                },
-                "m_SlotId": 3
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "13c6fccccec840d09651d6394dd13bae"
-                },
-                "m_SlotId": 2
             }
         },
         {
@@ -269,9 +227,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -452.9999084472656,
-            "y": 102.00003051757813,
-            "width": 207.9999237060547,
+            "x": -258.00006103515627,
+            "y": -259.0,
+            "width": 208.0000457763672,
             "height": 302.0
         }
     },
@@ -1017,7 +975,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"7c0a89c0a1dc75a478f979fe94eefdcd\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"b09c53c6085cd5448a356fa4ef4de3de\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -1263,7 +1221,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"e9c21a6fa9bf14c478a5dbdda2f338e9\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"344c35e622a0d594eb1d8a95cd4f0506\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -1411,7 +1369,7 @@
     "m_ShaderOutputName": "Tiling",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.699999988079071,
+        "x": 0.6200000047683716,
         "y": 1.0
     },
     "m_DefaultValue": {
