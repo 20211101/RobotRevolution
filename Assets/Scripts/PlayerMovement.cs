@@ -21,4 +21,9 @@ public class PlayerMovement : MonoBehaviour
 
         characterController.linearVelocity = dir * speed /** Time.deltaTime*/;
     }
+
+    public void SpeedUp(float amount)
+    {
+        speed += amount;
+    }
 }

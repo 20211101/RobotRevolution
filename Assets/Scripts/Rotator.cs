@@ -2,7 +2,8 @@ using UnityEngine;
 using System.Collections.Generic;
 public class Rotator : MonoBehaviour
 {
-    private int maxChildCnt =2;
+    private int maxChildCnt = 3;
+    public  int MaxChildCnt => maxChildCnt;
     private List<Transform> childs = new List<Transform>();
     [SerializeField]
     private float distance = 3;
@@ -48,8 +49,6 @@ public class Rotator : MonoBehaviour
         for (int i = 0; i < childs.Count; i++)
         {
             float angle = (360f / childs.Count) * i;
-            Debug.Log($"{i} : {angle}");
-            Debug.Log($"{Mathf.Cos(angle *  Mathf.Deg2Rad)} : {Mathf.Sin(angle * Mathf.Deg2Rad)}");
             // angle -> dir
             // y/x         v
             

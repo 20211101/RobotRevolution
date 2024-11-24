@@ -17,6 +17,13 @@ public class PlayerRender : MonoBehaviour
     Transform target;
     [SerializeField]
     Transform electricEndPoint;
+    // 플레이어 색깔 바꾸는 애님
+    [SerializeField]
+    MeshRenderer[] playerMeshs;
+    [SerializeField]
+    Material baseMat;
+    [SerializeField]
+    Material invincibillityMat;
 
     private void Awake()
     {
@@ -63,5 +70,15 @@ public class PlayerRender : MonoBehaviour
         float y = Mathf.Sin(angle) * dist;
         float x = Mathf.Cos(angle) * dist;
         return new Vector2(x, y);
+    }
+    public void RenderInvincibillity()
+    {
+        foreach (MeshRenderer mesh in playerMeshs)
+            mesh.material = invincibillityMat;
+    }
+    public void EndRenderInvincibillity()
+    {
+        foreach (MeshRenderer mesh in playerMeshs)
+            mesh.material = baseMat;
     }
 }
