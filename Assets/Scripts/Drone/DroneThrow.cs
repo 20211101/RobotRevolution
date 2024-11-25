@@ -13,6 +13,8 @@ public class DroneThrow : DroneBase
     float attackDistance = 10;
     [SerializeField]
     Rotator rotator;
+    [SerializeField]
+    Transform droenRenderer;
 
     private IEnumerator Start()
     {
@@ -22,7 +24,11 @@ public class DroneThrow : DroneBase
         {
             Vector3 point = FindTarget();
             if (point != Vector3.zero)
+            {
                 ShootBullet(point);
+                point.y = droenRenderer.position.y;
+                droenRenderer.LookAt( point);
+            }
             yield return new WaitForSeconds(finalAttackRate);
         }
     }
@@ -33,7 +39,7 @@ public class DroneThrow : DroneBase
         if (amIMini == true) return;
 
         GameObject g = Instantiate(childPrefab);
-        DroneThrow temp = g.GetComponent<DroneThrow>();
+        DroneThrow temp = g.GetComponentInChildren<DroneThrow>();
 
         temp.amIMini = true;
         temp.SetUpgrades(damageUpgrade, atkRateUpgrade);

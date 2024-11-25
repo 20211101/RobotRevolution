@@ -14,6 +14,8 @@ public class DroneRange : DroneBase
     float attackDistance = 10;
     [SerializeField]
     Rotator rotator;
+    [SerializeField]
+    Transform droenRenderer;
 
     private IEnumerator Start()
     {
@@ -23,7 +25,11 @@ public class DroneRange : DroneBase
         {
             Vector3 point = FindTarget();
             if (point != Vector3.zero)
+            {
                 ShootBullet(point);
+                point.y = droenRenderer.position.y;
+                droenRenderer.LookAt(point);
+            }
             yield return new WaitForSeconds(finalAttackRate);
         }
     }

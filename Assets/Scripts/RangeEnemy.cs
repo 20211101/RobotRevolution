@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-public class SimpleEnemy : EnemyBase
+public class RangeEnemy : EnemyBase
 {
     private SkinnedMeshRenderer[] render;
     private Color normalColor;
@@ -8,29 +8,47 @@ public class SimpleEnemy : EnemyBase
     private Color damagedColor;
     [SerializeField]
     private Transform renderT;
+    [SerializeField]
+    private Transform shootPos;
 
-    private Rigidbody rigidbody;
+    private Rigidbody eRigidbody;
+    private Animator anim;
+
+    private float atkRange = 4;
     private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        eRigidbody = GetComponentInParent<Rigidbody>();
         render = GetComponentsInChildren<SkinnedMeshRenderer>();
+        anim = GetComponentInChildren<Animator>();
         normalColor = render[0].material.color;
     }
-    public override void Setup(MemoryPool pool, Transform target, float hp, float speed, float damage, float exp)
-    {
-        base.Setup(pool,target, hp, speed, damage, exp);
-    }
+
     private void Update()
     {
-        Move();
         renderT.LookAt(target);
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Shoot_SingleShot_AR")) return;
+        
+        if ((target.position - transform.position).sqrMagnitude < atkRange * atkRange)
+        {
+            anim.SetTrigger("Attack");
+            TriggerAttack();
+        }
+        else
+            Move();
     }
-    public override void Move()
+
+    public void TriggerAttack()
     {
-        Vector3 vel = (target.position - transform.position).normalized * speed;
-        vel.y = 0;
-        rigidbody.linearVelocity = vel;
+        eRigidbody.linearVelocity = Vector3.zero;
     }
+    public void Attack()
+    {
+        GameObject bullet = EnemyBulletPool.instance.BulletPool.ActivatePoolItem(shootPos.position);
+        Vector3 dir = (target.position - shootPos.position);
+        dir.y = 0;
+        bullet.GetComponent<EnemyBullet>().Setup(EnemyBulletPool.instance.BulletPool, damage, dir.normalized);
+    }
+
     public override bool Damaged(float damage)
     {
         if (damage >= hp)
@@ -38,7 +56,7 @@ public class SimpleEnemy : EnemyBase
             hp = 0;
             StopCoroutine(nameof(DamagedEffect));
             pool.DeactivatePoolItem(gameObject);
-            foreach(SkinnedMeshRenderer mesh in render)
+            foreach (SkinnedMeshRenderer mesh in render)
                 mesh.material.color = normalColor;
             PlayerBoby.instance.AddEXP(exp);
             gameObject.SetActive(false);
@@ -61,11 +79,13 @@ public class SimpleEnemy : EnemyBase
         foreach (SkinnedMeshRenderer mesh in render)
             mesh.material.color = normalColor;
     }
-    private void OnTriggerEnter(Collider other)
+    public override void Move()
     {
-        if(other.CompareTag("Player"))
-            other.GetComponent<PlayerBoby>().TakeDamage(damage);
+        Vector3 vel = (target.position - transform.parent.position).normalized * speed;
+        vel.y = 0;
+        eRigidbody.linearVelocity = vel;
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
