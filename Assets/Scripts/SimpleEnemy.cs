@@ -8,11 +8,13 @@ public class SimpleEnemy : EnemyBase
     private Color damagedColor;
     [SerializeField]
     private Transform renderT;
+    [SerializeField]
+    Animator anim;
 
     private Rigidbody rigidbody;
     private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        rigidbody = GetComponentInParent<Rigidbody>();
         render = GetComponentsInChildren<SkinnedMeshRenderer>();
         normalColor = render[0].material.color;
     }
@@ -22,6 +24,7 @@ public class SimpleEnemy : EnemyBase
     }
     private void Update()
     {
+        if (hp <= 0) return;
         Move();
         renderT.LookAt(target);
     }
@@ -31,26 +34,31 @@ public class SimpleEnemy : EnemyBase
         vel.y = 0;
         rigidbody.linearVelocity = vel;
     }
+    [SerializeField] GameObject parent;
     public override bool Damaged(float damage)
     {
-        if (damage >= hp)
+        if (hp > 0 && damage >= hp)
         {
             hp = 0;
+            anim.SetTrigger("Die");
+            rigidbody.linearVelocity = Vector3.zero;
             StopCoroutine(nameof(DamagedEffect));
-            pool.DeactivatePoolItem(gameObject);
             foreach(SkinnedMeshRenderer mesh in render)
                 mesh.material.color = normalColor;
             PlayerBoby.instance.AddEXP(exp);
-            gameObject.SetActive(false);
             return true;
         }
-        else
+        else if (damage < hp)
         {
             StopCoroutine(nameof(DamagedEffect));
             StartCoroutine(nameof(DamagedEffect));
             hp -= damage;
-            return false;
         }
+            return false;
+    }
+    public void Die()
+    {
+        pool.DeactivatePoolItem(parent);
     }
 
     private IEnumerator DamagedEffect()
@@ -68,7 +76,7 @@ public class SimpleEnemy : EnemyBase
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (hp > 0 && collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<PlayerBoby>().TakeDamage(damage);
         }

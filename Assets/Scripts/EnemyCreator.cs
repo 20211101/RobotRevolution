@@ -2,79 +2,58 @@ using UnityEngine;
 using System.Collections;
 public class EnemyCreator : MonoBehaviour
 {
+    [Header("생성 속도 + 분당 강해지는 배율(체력과 피해량이 증가함) 경험치도 추가 제공")]
     [SerializeField]
-    float  CreateSpeed = 5f;
+    float statMultiflyPerMin = 0.2f;
     [Header("기본 적 스펙")]
-    [SerializeField]
     GameObject simpleEnemy;
-    [SerializeField]
-    float simpleEnemy_hp;
-    [SerializeField]
-    float simpleEnemy_speed;
-    [SerializeField]
-    float simpleEnemy_damage;
-    [SerializeField]
-    float simpleEnemy_exp;
-    [SerializeField]
-    Transform player;
     MemoryPool simpleEnemyPool;
 
-    private IEnumerator Start()
+    float finalMultifly => statMultiflyPerMin * TimeCalculator.instance.minute;
+
+    private void Awake()
     {
+    }
+    EnemySpawnController head;
+    public void Setup(EnemySpawnController head, GameObject simple, GameObject charge, GameObject range)
+    {
+        this.head = head;
+        simpleEnemy = simple;
+        chargeEnemy = charge;
+        rangeEnemy = range;
         simpleEnemyPool = new MemoryPool(simpleEnemy);
         chargeEnemyPool = new MemoryPool(chargeEnemy);
         rangeEnemyEnemyPool = new MemoryPool(rangeEnemy);
-        while (true)
-        {
-            yield return new WaitForSeconds(CreateSpeed);
-            SpawnChargeEnemy();
-            SpawnSimpleEnemy();
-            SpawnRangeEnemy();
-        }
     }
 
     public void SpawnSimpleEnemy()
     {
         GameObject obj = simpleEnemyPool.ActivatePoolItem(transform.position);
         EnemyBase enemy = obj.GetComponentInChildren<EnemyBase>();
-        enemy.Setup(simpleEnemyPool, player, simpleEnemy_hp, simpleEnemy_speed, simpleEnemy_damage, simpleEnemy_exp);
+        enemy.Setup(simpleEnemyPool, head.player,
+            head.simpleEnemy_hp + head.simpleEnemy_hp * finalMultifly
+            , head.simpleEnemy_speed,
+            head.simpleEnemy_damage + head.simpleEnemy_damage * finalMultifly, head.simpleEnemy_exp + head.simpleEnemy_exp * statMultiflyPerMin);
     }
     [Header("기본 적 스펙")]
-    [SerializeField]
     GameObject chargeEnemy;
-    [SerializeField]
-    float chargeEnemy_hp;
-    [SerializeField]
-    float chargeEnemy_speed;
-    [SerializeField]
-    float chargeEnemy_damage;
-    [SerializeField]
-    float chargeEnemy_exp;
     MemoryPool chargeEnemyPool;
 
     public void SpawnChargeEnemy()
     {
         GameObject obj = chargeEnemyPool.ActivatePoolItem(transform.position);
         EnemyBase enemy = obj.GetComponentInChildren<EnemyBase>();
-        enemy.Setup(chargeEnemyPool, player, chargeEnemy_hp, chargeEnemy_speed, chargeEnemy_damage, chargeEnemy_exp);
+        enemy.Setup(chargeEnemyPool, head.player, head.chargeEnemy_hp + head.chargeEnemy_hp * finalMultifly
+            , head.chargeEnemy_speed, head.chargeEnemy_damage + head.chargeEnemy_damage * finalMultifly, head.chargeEnemy_exp + head.chargeEnemy_exp * statMultiflyPerMin);
     }
     [Header("기본 적 스펙")]
-    [SerializeField]
     GameObject rangeEnemy;
-    [SerializeField]
-    float rangeEnemy_hp;
-    [SerializeField]
-    float rangeEnemyy_speed;
-    [SerializeField]
-    float rangeEnemy_damage;
-    [SerializeField]
-    float rangeEnemy_exp;
     MemoryPool rangeEnemyEnemyPool;
 
     public void SpawnRangeEnemy()
     {
         GameObject obj = rangeEnemyEnemyPool.ActivatePoolItem(transform.position);
         EnemyBase enemy = obj.GetComponentInChildren<EnemyBase>();
-        enemy.Setup(rangeEnemyEnemyPool, player, rangeEnemy_hp, rangeEnemyy_speed, rangeEnemy_damage, rangeEnemy_exp);
+        enemy.Setup(rangeEnemyEnemyPool, head.player, head.rangeEnemy_hp + head.rangeEnemy_hp * finalMultifly, head.rangeEnemyy_speed, head.rangeEnemy_damage + head.rangeEnemy_damage * finalMultifly, head.rangeEnemy_exp + head.rangeEnemy_exp * statMultiflyPerMin);
     }
 }

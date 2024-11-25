@@ -1,5 +1,6 @@
 using UnityEngine;
 
+public enum EnemyType { Simple, Range, Charge}
 public abstract class EnemyBase : MonoBehaviour
 {
     [SerializeField]

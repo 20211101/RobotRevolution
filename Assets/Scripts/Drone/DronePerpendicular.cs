@@ -3,6 +3,7 @@ using System.Collections;
 public class DronePerpendicular : DroneBase
 {
     public bool amIMini = false;
+    [Header("공격력 공격주기 초깃값")]
     [SerializeField]
     float attackRate = 1f;
     float finalAttackRate ;

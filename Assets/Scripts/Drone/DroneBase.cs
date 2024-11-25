@@ -16,6 +16,7 @@ public abstract class DroneBase : MonoBehaviour
     protected int maxDamageUpgrade = 3;
     protected int damageUpgrade = 0;
     public bool CanDamageUpgrade => damageUpgrade < maxDamageUpgrade;
+    [Header("레벨 업 마다 값 변화하는 정도")]
     [SerializeField]
     protected float dmgUpOffset = 0;
 

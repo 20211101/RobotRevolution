@@ -141,7 +141,7 @@ public class PlayerBoby : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         
-        if (Physics.Raycast(head.position, head.forward, out hit, Distance, 1 << 7))
+        if (Physics.Raycast(head.position, head.forward, out hit, Distance, (1 << 7)))
         {
             render.HitRender(hit);
             if(Time.time - curAtkCoolTime > atkCoolTime)

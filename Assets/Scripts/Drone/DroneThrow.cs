@@ -3,6 +3,7 @@ using System.Collections;
 public class DroneThrow : DroneBase
 {
     public bool amIMini = false;
+    [Header("공격력 공격주기 사거리 초깃값")]
     [SerializeField]
     float attackRate = 3f;
     float finalAttackRate;

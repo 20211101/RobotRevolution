@@ -14,6 +14,7 @@ public class RangeEnemy : EnemyBase
     private Rigidbody eRigidbody;
     private Animator anim;
 
+    [Header("공격사거리 초깃값")]
     private float atkRange = 4;
     private void Awake()
     {
@@ -25,6 +26,7 @@ public class RangeEnemy : EnemyBase
 
     private void Update()
     {
+        if (hp <= 0) return;
         renderT.LookAt(target);
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Shoot_SingleShot_AR")) return;
         
@@ -49,28 +51,32 @@ public class RangeEnemy : EnemyBase
         bullet.GetComponent<EnemyBullet>().Setup(EnemyBulletPool.instance.BulletPool, damage, dir.normalized);
     }
 
+    [SerializeField] GameObject parent;
     public override bool Damaged(float damage)
     {
-        if (damage >= hp)
+        if (hp > 0 && damage >= hp)
         {
+            anim.SetTrigger("Die");
+            eRigidbody.linearVelocity = Vector3.zero;
             hp = 0;
+            PlayerBoby.instance.AddEXP(exp);
             StopCoroutine(nameof(DamagedEffect));
-            pool.DeactivatePoolItem(gameObject);
             foreach (SkinnedMeshRenderer mesh in render)
                 mesh.material.color = normalColor;
-            PlayerBoby.instance.AddEXP(exp);
-            gameObject.SetActive(false);
             return true;
         }
-        else
+        else if(damage < hp)
         {
             StopCoroutine(nameof(DamagedEffect));
             StartCoroutine(nameof(DamagedEffect));
             hp -= damage;
-            return false;
         }
+        return false;
     }
-
+    public void Die()
+    {
+        pool.DeactivatePoolItem(parent);
+    }
     private IEnumerator DamagedEffect()
     {
         foreach (SkinnedMeshRenderer mesh in render)
@@ -88,7 +94,7 @@ public class RangeEnemy : EnemyBase
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (hp > 0 && collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<PlayerBoby>().TakeDamage(damage);
         }

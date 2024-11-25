@@ -25,8 +25,11 @@ public class ChargeEnemy : EnemyBase
 
     private void Update()
     {
-
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("H2H_PowerPunch01_Forward")) return;
+        if (hp <= 0) return;
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("H2H_PowerPunch01_Forward"))
+        {
+            Debug.Log(anim.GetCurrentAnimatorStateInfo(0).ToString());
+            return; }
         renderT.LookAt(target);
         if ((target.position - transform.position).sqrMagnitude < atkRange * atkRange)
         {
@@ -57,26 +60,32 @@ public class ChargeEnemy : EnemyBase
         transform.parent.position = transform.position + transform.forward * 5.5f;
     }
 
+    [SerializeField] GameObject parent;
     public override bool Damaged(float damage)
     {
-        if (damage >= hp)
+        if (hp > 0 && damage >= hp)
         {
             hp = 0;
+            anim.SetTrigger("Die");
+            eRigidbody.linearVelocity = Vector3.zero;
+            atkAreaRenderer.SetActive(false);
             StopCoroutine(nameof(DamagedEffect));
-            pool.DeactivatePoolItem(gameObject);
             foreach (SkinnedMeshRenderer mesh in render)
                 mesh.material.color = normalColor;
             PlayerBoby.instance.AddEXP(exp);
-            gameObject.SetActive(false);
             return true;
         }
-        else
+        else if (damage < hp)
         {
             StopCoroutine(nameof(DamagedEffect));
             StartCoroutine(nameof(DamagedEffect));
             hp -= damage;
-            return false;
         }
+        return false;
+    }
+    public void Die()
+    {
+        pool.DeactivatePoolItem(parent);
     }
 
     private IEnumerator DamagedEffect()
@@ -96,7 +105,7 @@ public class ChargeEnemy : EnemyBase
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (hp > 0 && collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<PlayerBoby>().TakeDamage(damage);
         }
