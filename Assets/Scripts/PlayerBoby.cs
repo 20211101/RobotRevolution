@@ -81,6 +81,7 @@ public class PlayerBoby : MonoBehaviour
     }
     public void LevelUp()
     {
+        
         UIController.instance.OpenUpgradeUI();
     }
 
