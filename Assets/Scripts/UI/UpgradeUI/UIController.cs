@@ -28,10 +28,12 @@ public class UIController : MonoBehaviour
 
     public void CloseUpgradeUI()
     {
+        Time.timeScale = 1;
         upgradeInfoViewer.gameObject.SetActive(false);
     }
     public void OpenUpgradeUI()
     {
+        Time.timeScale = 0;
         upgradeInfoViewer.PrintInfo();
         upgradeInfoViewer.gameObject.SetActive(true);
     }
