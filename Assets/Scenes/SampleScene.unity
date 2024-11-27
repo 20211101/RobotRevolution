@@ -309,7 +309,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7289429183812190515, guid: 479b93a4321cc844ab2bd0a632a4ec17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 479b93a4321cc844ab2bd0a632a4ec17, type: 3}
 --- !u!1 &59488042
 GameObject:
@@ -922,7 +925,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5450245377514713850, guid: ebd3e05f7d0dbe24890840831739d2ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: ebd3e05f7d0dbe24890840831739d2ff, type: 3}
 --- !u!1 &283446087
 GameObject:
@@ -1127,10 +1133,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyed_ThrowDrone (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6150923589325996187, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3459069612487377440, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
 --- !u!1 &324470903
 GameObject:
@@ -4254,7 +4267,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5450245377514713850, guid: ebd3e05f7d0dbe24890840831739d2ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: ebd3e05f7d0dbe24890840831739d2ff, type: 3}
 --- !u!1 &832575517
 GameObject:
@@ -7156,7 +7172,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7289429183812190515, guid: 479b93a4321cc844ab2bd0a632a4ec17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 479b93a4321cc844ab2bd0a632a4ec17, type: 3}
 --- !u!1001 &1256591363
 PrefabInstance:
@@ -7210,10 +7229,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyed_ThrowDrone (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6150923589325996187, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3459069612487377440, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
 --- !u!1 &1265920648
 GameObject:
@@ -7406,7 +7432,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7289429183812190515, guid: 479b93a4321cc844ab2bd0a632a4ec17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 479b93a4321cc844ab2bd0a632a4ec17, type: 3}
 --- !u!1 &1270533980
 GameObject:
@@ -12101,10 +12130,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyed_ThrowDrone
       objectReference: {fileID: 0}
+    - target: {fileID: 6150923589325996187, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255858745760332466, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.41033924
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255858745760332466, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.4103392
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255858745760332466, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.57586604
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255858745760332466, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.57586616
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255858745760332466, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -19.056
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255858745760332466, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255858745760332466, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3459069612487377440, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 2d0add69cdcdadb4bafd7ed18bf39c31, type: 3}
 --- !u!1 &1968482660
 GameObject:
@@ -13274,7 +13338,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5450245377514713850, guid: ebd3e05f7d0dbe24890840831739d2ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: ebd3e05f7d0dbe24890840831739d2ff, type: 3}
 --- !u!1001 &8520770816497999255
 PrefabInstance:
