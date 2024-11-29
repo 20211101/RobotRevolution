@@ -18,11 +18,10 @@ public class DestroyedDrone : MonoBehaviour
 
     [SerializeField]
     Image percentUI;
-    Color good;
+
     private void Awake()
     {
         lists.Add(this);
-        good = percentUI.color;
     }
 
     public void UIoff()
@@ -44,7 +43,6 @@ public class DestroyedDrone : MonoBehaviour
                 {
                     energyPercent = 0f;
                     StartCoroutine("CantAddAnim");
-                    return;
                     // UI쪽에서도 반응 해주면 좋을듯
                 }
 
@@ -74,10 +72,10 @@ public class DestroyedDrone : MonoBehaviour
     {
         percentUI.color = Color.red;
         yield return new WaitForSeconds(0.2f);
-        percentUI.color = good;
+        percentUI.color = Color.white;
         yield return new WaitForSeconds(0.2f);
         percentUI.color = Color.red;
         yield return new WaitForSeconds(0.2f);
-        percentUI.color = good;
+        percentUI.color = Color.white;
     }
 }
