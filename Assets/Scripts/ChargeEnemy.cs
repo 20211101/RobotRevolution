@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
 public class ChargeEnemy : EnemyBase
 {
     private SkinnedMeshRenderer[] render;
@@ -12,6 +13,7 @@ public class ChargeEnemy : EnemyBase
     private GameObject atkAreaRenderer;
 
     private Rigidbody eRigidbody;
+    private NavMeshAgent agent;  // NavMeshAgent 컴포넌트
     private Animator anim;
 
     private float atkRange = 2;
@@ -19,6 +21,7 @@ public class ChargeEnemy : EnemyBase
     {
         eRigidbody = GetComponentInParent<Rigidbody>();
         render = GetComponentsInChildren<SkinnedMeshRenderer>();
+        agent = GetComponentInParent<NavMeshAgent>();  // 컴포넌트 가져오기
         anim = GetComponentInChildren<Animator>();
         normalColor = render[0].material.color;
     }
@@ -31,18 +34,22 @@ public class ChargeEnemy : EnemyBase
             Debug.Log(anim.GetCurrentAnimatorStateInfo(0).ToString());
             return; }
         renderT.LookAt(target);
-        if ((target.position - transform.position).sqrMagnitude < atkRange * atkRange)
+        if ( (target.position - transform.position).sqrMagnitude < atkRange * atkRange)
         {
             anim.SetTrigger("Attack");
             TriggerAttack();
+            eRigidbody.linearVelocity = Vector3.zero;
         }
         else
+        {
+            agent.speed = speed;
             Move();
+        }
     }
 
     public void TriggerAttack()
     {
-        eRigidbody.linearVelocity = Vector3.zero;
+        agent.speed = 0;
         atkAreaRenderer.SetActive(true);
     }
     public void DisableAtkArea()
@@ -69,6 +76,7 @@ public class ChargeEnemy : EnemyBase
             anim.SetTrigger("Die");
             eRigidbody.linearVelocity = Vector3.zero;
             atkAreaRenderer.SetActive(false);
+            Invoke("Die", 1f);
             StopCoroutine(nameof(DamagedEffect));
             foreach (SkinnedMeshRenderer mesh in render)
                 mesh.material.color = normalColor;
@@ -100,9 +108,16 @@ public class ChargeEnemy : EnemyBase
     {
         Vector3 vel = (target.position - transform.parent.position).normalized * speed;
         vel.y = 0;
-        eRigidbody.linearVelocity = vel;
+        //eRigidbody.linearVelocity = vel;
+        agent.destination = target.position;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.gameObject.name);
+        if (other.CompareTag("Player"))
+            other.GetComponent<PlayerBoby>().TakeDamage(damage);
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (hp > 0 && collision.gameObject.CompareTag("Player"))

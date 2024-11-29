@@ -64,7 +64,7 @@ public class EnemySpawnController : MonoBehaviour
         get
         {
             int min = TimeCalculator.instance.minute;
-            if (min < 1)
+            if (min < /*1*/ 10)
                 return 5;
             else if (min < 3)
                 return 4;
@@ -81,7 +81,7 @@ public class EnemySpawnController : MonoBehaviour
         get
         {
             int min = TimeCalculator.instance.minute;
-            if (min < 1)
+            if (min < /*1*/ 10)
                 return set1;
             else if (min < 3)
                 return set2;
