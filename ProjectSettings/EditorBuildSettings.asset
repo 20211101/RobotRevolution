@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Jeong_Jihun/Game Start Test/FirstScene.unity
+    guid: 0868ff423df2f6e4192ca81b8cccb615
+  - enabled: 1
+    path: Assets/Scenes/CollapsScene_GamePlay.unity
+    guid: 9d6687edb4f84dc468184b0247874f17
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
