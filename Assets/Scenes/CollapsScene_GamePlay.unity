@@ -85406,6 +85406,10 @@ PrefabInstance:
     - target: {fileID: 761497004932124845, guid: babf1a0914f474b4f8ee5368fa16ffa2, type: 3}
       propertyPath: LightsModule.light
       value: 
+      objectReference: {fileID: 7262137288781622674, guid: 451cb1da9d7555b4c98c29ab0dc2fbe5, type: 3}
+    - target: {fileID: 761497004932124845, guid: babf1a0914f474b4f8ee5368fa16ffa2, type: 3}
+      propertyPath: LightsModule.ratio
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 761497004932124845, guid: babf1a0914f474b4f8ee5368fa16ffa2, type: 3}
       propertyPath: SizeModule.enabled

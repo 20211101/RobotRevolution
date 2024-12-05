@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 5023020455508840007}
   - component: {fileID: 1270264712567139166}
   - component: {fileID: 5498591651668596225}
-  - component: {fileID: 7209404838865222020}
-  - component: {fileID: 4981285267854168244}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -90,36 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7209404838865222020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397817947976501235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a492709b5d5a4164c815e838947554db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  duration: 2
---- !u!114 &4981285267854168244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397817947976501235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2736c3c92720d14688eab8fe4c53e6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  duration: 2
-  particleEffect1: {fileID: 3144391121384809968}
-  particleEffect2: {fileID: 0}
 --- !u!1 &2361847379271265576
 GameObject:
   m_ObjectHideFlags: 0
