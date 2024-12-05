@@ -58,9 +58,9 @@ public class PlayerBoby : MonoBehaviour
     private float MAX_HP = 100;
     private float hp = 100;
     //Recovery per Scecond
-    private float hpRecovery = 5;
+    private float hpRecovery = 0.5f;
     private bool isInvincibilityTime = false;
-    private float invincibilityTime = 3f;
+    private float invincibilityTime = 2f;
     private CapsuleCollider p_collider;
     public float MAXHP => MAX_HP;
     public float Hp => hp;
