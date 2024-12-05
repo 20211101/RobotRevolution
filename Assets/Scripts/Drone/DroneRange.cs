@@ -112,6 +112,7 @@ public class DroneRange : DroneBase
     }
     public void ShootBullet(Vector3 pos)
     {
+        SoundManager.instance.PlayShooting();
         GameObject bullet = DroneBulletPool.instance.BulletPool.ActivatePoolItem(transform.position);
         Vector3 dir = (pos - transform.position).normalized;
         bullet.GetComponent<DroneBullet>().Setup(DroneBulletPool.instance.BulletPool, finalDamage, dir);

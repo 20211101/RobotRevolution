@@ -14,6 +14,8 @@ public class FireAOEBullt : MonoBehaviour
 
     public void Setup(FireAOEBulltPool pool, Vector3 start, Vector3 end, float duration, float damage, float size)
     {
+        SoundManager.instance.PlayFirePlatform();
+
         this.pool = pool;
         Debug.Log($"S:{start} E:{end}");
         startP = start;

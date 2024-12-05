@@ -1,5 +1,6 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
 public class SimpleEnemy : EnemyBase
 {
     private SkinnedMeshRenderer[] render;
@@ -11,6 +12,8 @@ public class SimpleEnemy : EnemyBase
     [SerializeField]
     Animator anim;
 
+    private NavMeshAgent agent;  // NavMeshAgent ������Ʈ
+
     private Rigidbody rigidbody;
     private void Awake()
     {
@@ -20,19 +23,25 @@ public class SimpleEnemy : EnemyBase
     }
     public override void Setup(MemoryPool pool, Transform target, float hp, float speed, float damage, float exp)
     {
-        base.Setup(pool,target, hp, speed, damage, exp);
+        base.Setup(pool, target, hp, speed, damage, exp);
+        agent = GetComponentInParent<NavMeshAgent>();  // ������Ʈ ��������
+        agent.speed = speed;
+        base.Setup(pool, target, hp, speed, damage, exp);
     }
     private void Update()
     {
         if (hp <= 0) return;
         Move();
+
+        //        renderT.LookAt(target);
         renderT.LookAt(target);
     }
     public override void Move()
     {
+        agent.destination = target.position;  // ��ǥ ���� ����
         Vector3 vel = (target.position - transform.position).normalized * speed;
         vel.y = 0;
-        rigidbody.linearVelocity = vel;
+        //rigidbody.linearVelocity = vel;
     }
     [SerializeField] GameObject parent;
     public override bool Damaged(float damage)
@@ -43,8 +52,9 @@ public class SimpleEnemy : EnemyBase
             anim.SetTrigger("Die");
             rigidbody.linearVelocity = Vector3.zero;
             StopCoroutine(nameof(DamagedEffect));
-            foreach(SkinnedMeshRenderer mesh in render)
-                mesh.material.color = normalColor;
+            Invoke("Die", 1f);
+            foreach (SkinnedMeshRenderer mesh in render)
+                    mesh.material.color = normalColor;
             PlayerBoby.instance.AddEXP(exp);
             return true;
         }
@@ -54,7 +64,7 @@ public class SimpleEnemy : EnemyBase
             StartCoroutine(nameof(DamagedEffect));
             hp -= damage;
         }
-            return false;
+        return false;
     }
     public void Die()
     {
@@ -71,11 +81,13 @@ public class SimpleEnemy : EnemyBase
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        Debug.Log(other.gameObject.name);
+        if (other.CompareTag("Player"))
             other.GetComponent<PlayerBoby>().TakeDamage(damage);
     }
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log(collision.gameObject.name);
         if (hp > 0 && collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<PlayerBoby>().TakeDamage(damage);
