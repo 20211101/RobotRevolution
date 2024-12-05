@@ -43,6 +43,7 @@ public class DestroyedDrone : MonoBehaviour
                 {
                     energyPercent = 0f;
                     StartCoroutine("CantAddAnim");
+                    return;
                     // UI쪽에서도 반응 해주면 좋을듯
                 }
 

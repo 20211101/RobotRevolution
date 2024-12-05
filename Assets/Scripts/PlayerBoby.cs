@@ -130,6 +130,8 @@ public class PlayerBoby : MonoBehaviour
     }
     private void Update()
     {
+        if (TimeCalculator.instance.leftT < 0)
+            return;
         movement.Moving();
         PlayerThunder();
         AutoRecovery();

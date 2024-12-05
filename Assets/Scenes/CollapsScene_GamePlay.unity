@@ -6043,9 +6043,9 @@ MonoBehaviour:
   droneImg: {fileID: 802599231}
   droneImgs:
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 21300000, guid: 09fce4c0a81b44944afbafc8f4c84fb2, type: 3}
-  - {fileID: 21300000, guid: a4a9dde6552980a42808da287293472b, type: 3}
-  - {fileID: 21300000, guid: a642b4dae04e5da47898fcb335a845ba, type: 3}
+  - {fileID: 21300000, guid: 7457c8c93ab9c024a92525c95203ab8a, type: 3}
+  - {fileID: 21300000, guid: 88cb73005d66bca4b955008d2098bcaa, type: 3}
+  - {fileID: 21300000, guid: 4ccc37bb86629d245b93c47d5454f8c0, type: 3}
   upgradeBtn_Damage: {fileID: 683065665}
   upgradeTxt_Damage: {fileID: 1146906318}
   upgradeBtn_AddChild: {fileID: 86565335}
@@ -13718,9 +13718,9 @@ MonoBehaviour:
   droneImg: {fileID: 1560589983}
   droneImgs:
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 21300000, guid: 09fce4c0a81b44944afbafc8f4c84fb2, type: 3}
-  - {fileID: 21300000, guid: a4a9dde6552980a42808da287293472b, type: 3}
-  - {fileID: 21300000, guid: a642b4dae04e5da47898fcb335a845ba, type: 3}
+  - {fileID: 21300000, guid: 7457c8c93ab9c024a92525c95203ab8a, type: 3}
+  - {fileID: 21300000, guid: 88cb73005d66bca4b955008d2098bcaa, type: 3}
+  - {fileID: 21300000, guid: 4ccc37bb86629d245b93c47d5454f8c0, type: 3}
   upgradeBtn_Damage: {fileID: 589836427}
   upgradeTxt_Damage: {fileID: 103365999}
   upgradeBtn_AddChild: {fileID: 1253880739}
@@ -19024,9 +19024,9 @@ MonoBehaviour:
   droneImg: {fileID: 1791735611}
   droneImgs:
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 21300000, guid: 09fce4c0a81b44944afbafc8f4c84fb2, type: 3}
-  - {fileID: 21300000, guid: a4a9dde6552980a42808da287293472b, type: 3}
-  - {fileID: 21300000, guid: a642b4dae04e5da47898fcb335a845ba, type: 3}
+  - {fileID: 21300000, guid: 7457c8c93ab9c024a92525c95203ab8a, type: 3}
+  - {fileID: 21300000, guid: 88cb73005d66bca4b955008d2098bcaa, type: 3}
+  - {fileID: 21300000, guid: 4ccc37bb86629d245b93c47d5454f8c0, type: 3}
   upgradeBtn_Damage: {fileID: 743470585}
   upgradeTxt_Damage: {fileID: 1240940757}
   upgradeBtn_AddChild: {fileID: 468589329}
@@ -24863,7 +24863,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 560201738}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 560201740}
+        m_TargetAssemblyTypeName: ToMainScene, Assembly-CSharp
+        m_MethodName: MoveToMainScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &560201738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30557,9 +30569,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 713548250}
   time: 0
-  GameEndUI: {fileID: 0}
-  GameEndEffect: {fileID: 0}
-  Camera: {fileID: 0}
+  GameEndUI: {fileID: 1401484151}
+  GameEndEffect: {fileID: 1235681382}
+  Cam: {fileID: 0}
+  purposeTime: 5
 --- !u!114 &713548250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31715,9 +31728,9 @@ MonoBehaviour:
   droneImg: {fileID: 724572248}
   droneImgs:
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 21300000, guid: 09fce4c0a81b44944afbafc8f4c84fb2, type: 3}
-  - {fileID: 21300000, guid: a4a9dde6552980a42808da287293472b, type: 3}
-  - {fileID: 21300000, guid: a642b4dae04e5da47898fcb335a845ba, type: 3}
+  - {fileID: 21300000, guid: 7457c8c93ab9c024a92525c95203ab8a, type: 3}
+  - {fileID: 21300000, guid: 88cb73005d66bca4b955008d2098bcaa, type: 3}
+  - {fileID: 21300000, guid: 4ccc37bb86629d245b93c47d5454f8c0, type: 3}
   upgradeBtn_Damage: {fileID: 869870}
   upgradeTxt_Damage: {fileID: 735318648}
   upgradeBtn_AddChild: {fileID: 1071627847}
@@ -35168,9 +35181,9 @@ MonoBehaviour:
   droneImg: {fileID: 71698180}
   droneImgs:
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 21300000, guid: 09fce4c0a81b44944afbafc8f4c84fb2, type: 3}
-  - {fileID: 21300000, guid: a4a9dde6552980a42808da287293472b, type: 3}
-  - {fileID: 21300000, guid: a642b4dae04e5da47898fcb335a845ba, type: 3}
+  - {fileID: 21300000, guid: 7457c8c93ab9c024a92525c95203ab8a, type: 3}
+  - {fileID: 21300000, guid: 88cb73005d66bca4b955008d2098bcaa, type: 3}
+  - {fileID: 21300000, guid: 4ccc37bb86629d245b93c47d5454f8c0, type: 3}
   upgradeBtn_Damage: {fileID: 1761884959}
   upgradeTxt_Damage: {fileID: 1468818734}
   upgradeBtn_AddChild: {fileID: 1411266836}
@@ -52808,6 +52821,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 615661061}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1235681382 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3771349673732139229, guid: d17d7a3b424ca0d4982701fba960b65e, type: 3}
+  m_PrefabInstance: {fileID: 1088960863}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1235762671 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4195192181494076, guid: d9aae718eb3789a4fad44b8727d939f0, type: 3}
@@ -61822,9 +61840,9 @@ MonoBehaviour:
   droneImg: {fileID: 1362626341}
   droneImgs:
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 21300000, guid: 09fce4c0a81b44944afbafc8f4c84fb2, type: 3}
-  - {fileID: 21300000, guid: a4a9dde6552980a42808da287293472b, type: 3}
-  - {fileID: 21300000, guid: a642b4dae04e5da47898fcb335a845ba, type: 3}
+  - {fileID: 21300000, guid: 7457c8c93ab9c024a92525c95203ab8a, type: 3}
+  - {fileID: 21300000, guid: 88cb73005d66bca4b955008d2098bcaa, type: 3}
+  - {fileID: 21300000, guid: 4ccc37bb86629d245b93c47d5454f8c0, type: 3}
   upgradeBtn_Damage: {fileID: 1591256176}
   upgradeTxt_Damage: {fileID: 906390319}
   upgradeBtn_AddChild: {fileID: 1669787920}

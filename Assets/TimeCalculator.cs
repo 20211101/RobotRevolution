@@ -16,7 +16,7 @@ public class TimeCalculator : MonoBehaviour
 
     public GameObject GameEndUI;
     public GameObject GameEndEffect;
-    public GameObject Camera;
+    public GameObject Cam;
     bool gameEnd = false;
 
     private void Awake()
@@ -28,7 +28,9 @@ public class TimeCalculator : MonoBehaviour
     {
         calcTime = true;
     }
-    float purposeTime = 60 * 10;
+    public float purposeTime = 60 * 10;
+    //float purposeTime = 5;
+    public float leftT => purposeTime - time;
     void Update()
     {
         if (gameEnd == true) return;
@@ -43,6 +45,9 @@ public class TimeCalculator : MonoBehaviour
 
     IEnumerator GameEndCo()
     {
-        yield return null;
+        yield return new WaitForSeconds(1);
+        GameEndEffect.SetActive(true);
+        yield return new WaitForSeconds(2);
+        GameEndUI.SetActive(true);
     }
 }

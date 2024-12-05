@@ -30,6 +30,8 @@ public class SimpleEnemy : EnemyBase
     }
     private void Update()
     {
+        if (TimeCalculator.instance.leftT < 0)
+            return;
         if (hp <= 0) return;
         Move();
 

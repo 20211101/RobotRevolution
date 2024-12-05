@@ -28,6 +28,8 @@ public class ChargeEnemy : EnemyBase
 
     private void Update()
     {
+        if (TimeCalculator.instance.leftT < 0)
+            return;
         if (hp <= 0) return;
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("H2H_PowerPunch01_Forward"))
         {

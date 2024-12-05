@@ -35,6 +35,8 @@ public class RangeEnemy : EnemyBase
 
     private void Update()
     {
+        if (TimeCalculator.instance.leftT < 0)
+            return;
         if (hp <= 0) return;
         renderT.LookAt(target);
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Shoot_SingleShot_AR")) return;

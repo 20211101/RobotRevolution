@@ -13,6 +13,17 @@ public class CameraMovement : MonoBehaviour
 
     private void Update()
     {
+
+        if (TimeCalculator.instance.leftT < 0)
+            EndGameMovement();
         FollowTarget(playerTransform);
+    }
+
+    public void EndGameMovement()
+    {
+
+        if( Camera.main.orthographic != false)
+            Camera.main.orthographic = false;
+        offset += new Vector3(0, 5, -4) * 2 ;
     }
 }
