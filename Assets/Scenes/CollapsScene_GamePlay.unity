@@ -43485,17 +43485,17 @@ MonoBehaviour:
   player: {fileID: 145861954}
   simpleEnemy: {fileID: 4822370620909512999, guid: ca9ac226ce0429748b47d7a9232ff271, type: 3}
   simpleEnemy_hp: 20
-  simpleEnemy_speed: 2
+  simpleEnemy_speed: 3
   simpleEnemy_damage: 10
   simpleEnemy_exp: 20
   chargeEnemy: {fileID: 7484421135655895241, guid: 890810440ab4dc444b9f6095126b1d00, type: 3}
   chargeEnemy_hp: 20
-  chargeEnemy_speed: 2
+  chargeEnemy_speed: 3
   chargeEnemy_damage: 10
   chargeEnemy_exp: 20
   rangeEnemy: {fileID: 5074892095962855001, guid: 9f855af88fa404447ba0c16f59aad0b8, type: 3}
   rangeEnemy_hp: 20
-  rangeEnemyy_speed: 2
+  rangeEnemyy_speed: 3
   rangeEnemy_damage: 10
   rangeEnemy_exp: 20
 --- !u!4 &1025802541
