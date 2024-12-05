@@ -404,6 +404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GasCan
       objectReference: {fileID: 0}
+    - target: {fileID: 1873877148905346, guid: 1ee2cb43c4fd5bd4ca3f0736c40345b3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4193205756292246, guid: 1ee2cb43c4fd5bd4ca3f0736c40345b3, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
