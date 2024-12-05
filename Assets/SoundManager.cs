@@ -24,14 +24,14 @@ public class SoundManager : MonoBehaviour
 
     public void PlayShooting()
     {
-        soundSource.PlayOneShot(Lager);
+        soundSource.PlayOneShot(Lager, 0.2f);
     }
     public void PlayUpgradeSound()
     {
-        soundSource.PlayOneShot(UpgradeSound);
+        soundSource.PlayOneShot(UpgradeSound, 0.2f);
     }
     public void PlayFirePlatform()
     {
-        soundSource.PlayOneShot(FirePlatform);
+        soundSource.PlayOneShot(FirePlatform, 0.2f);
     }
 }

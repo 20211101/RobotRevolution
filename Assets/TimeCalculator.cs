@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using TMPro;
 public class TimeCalculator : MonoBehaviour
 {
@@ -12,6 +13,12 @@ public class TimeCalculator : MonoBehaviour
     TextMeshProUGUI text;
     public float time;
     bool calcTime = false;
+
+    public GameObject GameEndUI;
+    public GameObject GameEndEffect;
+    public GameObject Camera;
+    bool gameEnd = false;
+
     private void Awake()
     {
         if (_instance == null)
@@ -21,12 +28,21 @@ public class TimeCalculator : MonoBehaviour
     {
         calcTime = true;
     }
-    float purposeTime = 60 * 15;
+    float purposeTime = 60 * 10;
     void Update()
     {
-        if (purposeTime - time < 0) Debug.Log("게임 종료~");
+        if (gameEnd == true) return;
+        if (purposeTime - time < 0)
+        {
+            StartCoroutine("GameEndCo");
+        }
         if (calcTime)
             time += Time.deltaTime;
         text.text = string.Format("{0:D2}:{1:D2}", leftMinute, leftScecond);
+    }
+
+    IEnumerator GameEndCo()
+    {
+        yield return null;
     }
 }
