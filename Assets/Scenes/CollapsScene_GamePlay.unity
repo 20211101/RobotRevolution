@@ -300,6 +300,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1235729
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,7 +1045,7 @@ GameObject:
   m_Component:
   - component: {fileID: 19302145}
   - component: {fileID: 19302144}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyCreator (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1062,7 +1074,7 @@ Transform:
   m_GameObject: {fileID: 19302143}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -43.1, y: 0, z: 32.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3014,6 +3026,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &72191855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3067,7 +3091,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72436842}
   - component: {fileID: 72436841}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyCreator (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3096,7 +3120,7 @@ Transform:
   m_GameObject: {fileID: 72436840}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 11.9, y: 0, z: -53.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4258,6 +4282,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331338549}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: CloseUpgradeUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5495,6 +5531,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 571659915}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &125220016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 125220017}
+  - component: {fileID: 125220018}
+  m_Layer: 0
+  m_Name: EnemyCreator (19)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &125220017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125220016}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12, y: 0, z: 4.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 145861954}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &125220018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125220016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statMultiflyPerMin: 0.2
 --- !u!4 &125312785 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4630427892602332, guid: 5864addef94c23c458de5835888882f7, type: 3}
@@ -6128,6 +6209,152 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4596521258710676, guid: 9017bf3c7479db0408f0f291df1208d2, type: 3}
   m_PrefabInstance: {fileID: 1566862372}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &144566721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 144566722}
+  - component: {fileID: 144566724}
+  - component: {fileID: 144566723}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &144566722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144566721}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 145861954}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &144566723
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144566721}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 66635959fe4e8364abc27c0213ad589d, type: 3}
+  m_Resource: {fileID: 8300000, guid: 66635959fe4e8364abc27c0213ad589d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.461
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &144566724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144566721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8505019b918a104b87ffb272c9020f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BGM: {fileID: 8300000, guid: 66635959fe4e8364abc27c0213ad589d, type: 3}
+  Lager: {fileID: 8300000, guid: 75face58501e8bf4eb2f859dd276be2e, type: 3}
+  UpgradeSound: {fileID: 8300000, guid: 52235c797d37a9141b8208b5f823ba6d, type: 3}
+  FirePlatform: {fileID: 8300000, guid: 669bd664c9433e34ea9604036f6854cd, type: 3}
 --- !u!4 &144702565 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4544182412267710, guid: 687de6d3276790f4c8178bc704d07f84, type: 3}
@@ -6250,40 +6477,31 @@ PrefabInstance:
       addedObject: {fileID: 356825817}
     - targetCorrespondingSourceObject: {fileID: 3903226318107666504, guid: 96d2af7587da2054d90d47a29e86166a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1994942858}
+      addedObject: {fileID: 535481753}
     - targetCorrespondingSourceObject: {fileID: 3903226318107666504, guid: 96d2af7587da2054d90d47a29e86166a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 277635424}
+      addedObject: {fileID: 1385757326}
     - targetCorrespondingSourceObject: {fileID: 3903226318107666504, guid: 96d2af7587da2054d90d47a29e86166a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1772093068}
+      addedObject: {fileID: 965719250}
     - targetCorrespondingSourceObject: {fileID: 3903226318107666504, guid: 96d2af7587da2054d90d47a29e86166a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 945517199}
+      addedObject: {fileID: 200167977}
     - targetCorrespondingSourceObject: {fileID: 3903226318107666504, guid: 96d2af7587da2054d90d47a29e86166a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1090838752}
+      addedObject: {fileID: 606937669}
     - targetCorrespondingSourceObject: {fileID: 3903226318107666504, guid: 96d2af7587da2054d90d47a29e86166a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 770347024}
+      addedObject: {fileID: 2094196169}
     - targetCorrespondingSourceObject: {fileID: 3903226318107666504, guid: 96d2af7587da2054d90d47a29e86166a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2045054465}
+      addedObject: {fileID: 125220017}
     - targetCorrespondingSourceObject: {fileID: 3903226318107666504, guid: 96d2af7587da2054d90d47a29e86166a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1527010382}
+      addedObject: {fileID: 1466896498}
     - targetCorrespondingSourceObject: {fileID: 3903226318107666504, guid: 96d2af7587da2054d90d47a29e86166a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 499001243}
-    - targetCorrespondingSourceObject: {fileID: 3903226318107666504, guid: 96d2af7587da2054d90d47a29e86166a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 877396730}
-    - targetCorrespondingSourceObject: {fileID: 3903226318107666504, guid: 96d2af7587da2054d90d47a29e86166a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 831683120}
-    - targetCorrespondingSourceObject: {fileID: 3903226318107666504, guid: 96d2af7587da2054d90d47a29e86166a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 488340733}
+      addedObject: {fileID: 144566722}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3252544435824891395, guid: 96d2af7587da2054d90d47a29e86166a, type: 3}
       insertIndex: 2
@@ -6455,7 +6673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153683977}
   - component: {fileID: 153683976}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyCreator (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6484,7 +6702,7 @@ Transform:
   m_GameObject: {fileID: 153683975}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.8, y: 0, z: -52.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6931,6 +7149,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331338549}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: CloseUpgradeUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8656,6 +8886,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4630427892602332, guid: 5864addef94c23c458de5835888882f7, type: 3}
   m_PrefabInstance: {fileID: 746690860}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &200167976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 200167977}
+  - component: {fileID: 200167978}
+  m_Layer: 0
+  m_Name: EnemyCreator (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &200167977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200167976}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.3, y: 0, z: -14.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 145861954}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &200167978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200167976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statMultiflyPerMin: 0.2
 --- !u!1001 &202232080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9054,6 +9329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Dirt_Round_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1180546678165372, guid: 61ae621c08c1157489e41af25992e4fd, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4421417946301696, guid: 61ae621c08c1157489e41af25992e4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 69.909996
@@ -9269,6 +9548,18 @@ MonoBehaviour:
       - m_Target: {fileID: 145861960}
         m_TargetAssemblyTypeName: PlayerBoby, Assembly-CSharp
         m_MethodName: UpgradeSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9891,6 +10182,18 @@ MonoBehaviour:
       - m_Target: {fileID: 145861960}
         m_TargetAssemblyTypeName: PlayerBoby, Assembly-CSharp
         m_MethodName: UpgradeHealth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11428,7 +11731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 270396882}
   - component: {fileID: 270396881}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyCreator (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11457,7 +11760,7 @@ Transform:
   m_GameObject: {fileID: 270396880}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -18, y: 0, z: -53.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11660,51 +11963,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4815518166075154, guid: 04f45ed51ef90a54fa30c94e8a905f04, type: 3}
   m_PrefabInstance: {fileID: 320134159}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &277635423
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 277635424}
-  - component: {fileID: 277635425}
-  m_Layer: 0
-  m_Name: EnemyCreator (14)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &277635424
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277635423}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.2, y: 0, z: 16.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 145861954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &277635425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277635423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statMultiflyPerMin: 0.2
 --- !u!1001 &278434802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12632,7 +12890,7 @@ GameObject:
   m_Component:
   - component: {fileID: 299156851}
   - component: {fileID: 299156850}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyCreator (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12661,7 +12919,7 @@ Transform:
   m_GameObject: {fileID: 299156849}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -42.7, y: 0, z: -26.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13056,6 +13314,18 @@ MonoBehaviour:
       - m_Target: {fileID: 145861960}
         m_TargetAssemblyTypeName: PlayerBoby, Assembly-CSharp
         m_MethodName: UpgradeEXP
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15507,7 +15777,7 @@ Transform:
   m_GameObject: {fileID: 356825816}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 28}
+  m_LocalPosition: {x: 1.67, y: 0, z: 19.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20342,6 +20612,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &468589330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21255,51 +21537,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4544182412267710, guid: 687de6d3276790f4c8178bc704d07f84, type: 3}
   m_PrefabInstance: {fileID: 2045975415}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &488340732
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 488340733}
-  - component: {fileID: 488340734}
-  m_Layer: 0
-  m_Name: EnemyCreator (24)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &488340733
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 488340732}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13, y: 0, z: 21}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 145861954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &488340734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 488340732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statMultiflyPerMin: 0.2
 --- !u!1001 &489170267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21654,51 +21891,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4596521258710676, guid: 9017bf3c7479db0408f0f291df1208d2, type: 3}
   m_PrefabInstance: {fileID: 289820103}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &499001242
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 499001243}
-  - component: {fileID: 499001244}
-  m_Layer: 0
-  m_Name: EnemyCreator (21)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &499001243
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 499001242}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.6, y: 0, z: 3.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 145861954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &499001244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 499001242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statMultiflyPerMin: 0.2
 --- !u!4 &499802108 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4421417946301696, guid: 61ae621c08c1157489e41af25992e4fd, type: 3}
@@ -21945,7 +22137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 508681399}
   - component: {fileID: 508681398}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyCreator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21974,7 +22166,7 @@ Transform:
   m_GameObject: {fileID: 508681397}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23233,6 +23425,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2039057384}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &535481752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 535481753}
+  - component: {fileID: 535481754}
+  m_Layer: 0
+  m_Name: EnemyCreator (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &535481753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535481752}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.2, y: 0, z: 15.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 145861954}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &535481754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535481752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statMultiflyPerMin: 0.2
 --- !u!4 &538049384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4596521258710676, guid: 9017bf3c7479db0408f0f291df1208d2, type: 3}
@@ -23507,6 +23744,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331338549}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: CloseUpgradeUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24011,6 +24260,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331338549}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: CloseUpgradeUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24626,6 +24887,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568062312}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &570538607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 570538609}
+  - component: {fileID: 570538608}
+  m_Layer: 9
+  m_Name: EnemyCreator (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &570538608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570538607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statMultiflyPerMin: 0.2
+--- !u!4 &570538609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570538607}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 66.5, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1025802541}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &570576462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25286,6 +25592,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &589836428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25756,6 +26074,51 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 687de6d3276790f4c8178bc704d07f84, type: 3}
+--- !u!1 &606937668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 606937669}
+  - component: {fileID: 606937670}
+  m_Layer: 0
+  m_Name: EnemyCreator (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &606937669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606937668}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4, y: 0, z: -13.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 145861954}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &606937670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606937668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statMultiflyPerMin: 0.2
 --- !u!4 &607266167 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4596521258710676, guid: 9017bf3c7479db0408f0f291df1208d2, type: 3}
@@ -29026,6 +29389,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &683065666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30816,6 +31191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Dirt_Round_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1180546678165372, guid: 61ae621c08c1157489e41af25992e4fd, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4421417946301696, guid: 61ae621c08c1157489e41af25992e4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 70.12999
@@ -31600,6 +31979,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331338549}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: CloseUpgradeUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -32800,51 +33191,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5864addef94c23c458de5835888882f7, type: 3}
---- !u!1 &770347023
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 770347024}
-  - component: {fileID: 770347025}
-  m_Layer: 0
-  m_Name: EnemyCreator (18)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &770347024
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770347023}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0, z: -26.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 145861954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &770347025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770347023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statMultiflyPerMin: 0.2
 --- !u!4 &770556479 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4544182412267710, guid: 687de6d3276790f4c8178bc704d07f84, type: 3}
@@ -33080,7 +33426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 774641659}
   - component: {fileID: 774641658}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyCreator (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33109,7 +33455,7 @@ Transform:
   m_GameObject: {fileID: 774641657}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 37.8, y: 0, z: -54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35105,51 +35451,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4596521258710676, guid: 9017bf3c7479db0408f0f291df1208d2, type: 3}
   m_PrefabInstance: {fileID: 95059087}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &831683119
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 831683120}
-  - component: {fileID: 831683121}
-  m_Layer: 0
-  m_Name: EnemyCreator (23)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &831683120
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831683119}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13, y: 0, z: 21}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 145861954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &831683121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831683119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statMultiflyPerMin: 0.2
 --- !u!4 &832309676 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4865947573452738, guid: 158426fcbbe6eda4dadc0a00117edaf2, type: 3}
@@ -36443,51 +36744,6 @@ PrefabInstance:
       addedObject: {fileID: 483012254}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9017bf3c7479db0408f0f291df1208d2, type: 3}
---- !u!1 &877396729
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 877396730}
-  - component: {fileID: 877396731}
-  m_Layer: 0
-  m_Name: EnemyCreator (22)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &877396730
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877396729}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.4, y: 0, z: 13.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 145861954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &877396731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877396729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statMultiflyPerMin: 0.2
 --- !u!1 &877891165
 GameObject:
   m_ObjectHideFlags: 0
@@ -37501,7 +37757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 895258821}
   - component: {fileID: 895258820}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyCreator (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37530,7 +37786,7 @@ Transform:
   m_GameObject: {fileID: 895258819}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -42.3, y: 0, z: 17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38735,7 +38991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 921576681}
   - component: {fileID: 921576680}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyCreator (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38764,7 +39020,7 @@ Transform:
   m_GameObject: {fileID: 921576679}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 47.5, y: 0, z: 60.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39448,6 +39704,51 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efff0c3b0a352e04ebb158479407163d, type: 3}
+--- !u!1 &936931376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 936931378}
+  - component: {fileID: 936931377}
+  m_Layer: 9
+  m_Name: EnemyCreator (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &936931377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936931376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statMultiflyPerMin: 0.2
+--- !u!4 &936931378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936931376}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 68.6, y: 0, z: -19.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1025802541}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &937021898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40093,51 +40394,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4335895354294258, guid: 30e83901a14cbb74eb04318d97dba042, type: 3}
   m_PrefabInstance: {fileID: 1003579534}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &945517198
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 945517199}
-  - component: {fileID: 945517200}
-  m_Layer: 0
-  m_Name: EnemyCreator (16)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &945517199
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945517198}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.9, y: 0, z: -14.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 145861954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &945517200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945517198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statMultiflyPerMin: 0.2
 --- !u!1001 &946034391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40649,6 +40905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Dirt_Round_02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1180546678165372, guid: 61ae621c08c1157489e41af25992e4fd, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4421417946301696, guid: 61ae621c08c1157489e41af25992e4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 67.53999
@@ -40734,6 +40994,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4630427892602332, guid: 5864addef94c23c458de5835888882f7, type: 3}
   m_PrefabInstance: {fileID: 1952226552}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &965719249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 965719250}
+  - component: {fileID: 965719251}
+  m_Layer: 0
+  m_Name: EnemyCreator (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &965719250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965719249}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.8, y: 0, z: -6.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 145861954}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &965719251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965719249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statMultiflyPerMin: 0.2
 --- !u!4 &966039335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4865947573452738, guid: 158426fcbbe6eda4dadc0a00117edaf2, type: 3}
@@ -42954,7 +43259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1025802541}
   - component: {fileID: 1025802540}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ENEMY_CREATORS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42986,20 +43291,21 @@ MonoBehaviour:
   - {fileID: 153683976}
   - {fileID: 72436841}
   - {fileID: 774641658}
+  - {fileID: 2111987609}
+  - {fileID: 2115501407}
+  - {fileID: 936931377}
+  - {fileID: 570538608}
+  - {fileID: 1726784352}
   SpecialCreators:
   - {fileID: 356825818}
-  - {fileID: 1994942859}
-  - {fileID: 277635425}
-  - {fileID: 1772093069}
-  - {fileID: 945517200}
-  - {fileID: 1090838753}
-  - {fileID: 770347025}
-  - {fileID: 2045054466}
-  - {fileID: 1527010383}
-  - {fileID: 499001244}
-  - {fileID: 877396731}
-  - {fileID: 831683121}
-  - {fileID: 488340734}
+  - {fileID: 535481754}
+  - {fileID: 1385757327}
+  - {fileID: 965719251}
+  - {fileID: 200167978}
+  - {fileID: 606937670}
+  - {fileID: 2094196170}
+  - {fileID: 125220018}
+  - {fileID: 1466896499}
   set1: 020000000100000000000000
   set2: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   set3: 0200000002000000020000000200000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -43047,6 +43353,11 @@ Transform:
   - {fileID: 153683977}
   - {fileID: 72436842}
   - {fileID: 774641659}
+  - {fileID: 2111987610}
+  - {fileID: 2115501408}
+  - {fileID: 936931378}
+  - {fileID: 570538609}
+  - {fileID: 1726784353}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1027837339 stripped
@@ -45088,6 +45399,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1072557214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46155,51 +46478,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5864addef94c23c458de5835888882f7, type: 3}
---- !u!1 &1090838751
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1090838752}
-  - component: {fileID: 1090838753}
-  m_Layer: 0
-  m_Name: EnemyCreator (17)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1090838752
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090838751}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.1, y: 0, z: -22.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 145861954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1090838753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090838751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statMultiflyPerMin: 0.2
 --- !u!4 &1090874878 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4630427892602332, guid: 5864addef94c23c458de5835888882f7, type: 3}
@@ -51676,6 +51954,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1230894514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52997,6 +53287,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1253880740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53617,6 +53919,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331338549}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: CloseUpgradeUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -57371,7 +57685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1350342219}
   - component: {fileID: 1350342218}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyCreator (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57400,7 +57714,7 @@ Transform:
   m_GameObject: {fileID: 1350342217}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -43.3, y: 0, z: -45.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58957,6 +59271,51 @@ PrefabInstance:
       addedObject: {fileID: 1020701547}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9017bf3c7479db0408f0f291df1208d2, type: 3}
+--- !u!1 &1385757325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1385757326}
+  - component: {fileID: 1385757327}
+  m_Layer: 0
+  m_Name: EnemyCreator (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1385757326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385757325}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.6, y: 0, z: 8.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 145861954}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1385757327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385757325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statMultiflyPerMin: 0.2
 --- !u!4 &1386410017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4740337816766370, guid: d2cc4d86402025a4da8fe1d92ada788d, type: 3}
@@ -60237,6 +60596,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331338549}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: CloseUpgradeUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -62864,6 +63235,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4255732231401788, guid: 7d3673673aae87d4c9e870ebd728c7ac, type: 3}
   m_PrefabInstance: {fileID: 457430623}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1466896497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1466896498}
+  - component: {fileID: 1466896499}
+  m_Layer: 0
+  m_Name: EnemyCreator (20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1466896498
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466896497}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12, y: 0, z: 4.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 145861954}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1466896499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466896497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statMultiflyPerMin: 0.2
 --- !u!1001 &1468649491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64928,51 +65344,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4639320510647656, guid: 1cb7bec5a45dcb340be40a4c03bdabab, type: 3}
   m_PrefabInstance: {fileID: 42233349}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1527010381
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1527010382}
-  - component: {fileID: 1527010383}
-  m_Layer: 0
-  m_Name: EnemyCreator (20)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1527010382
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527010381}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.3, y: 0, z: -10.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 145861954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1527010383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527010381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statMultiflyPerMin: 0.2
 --- !u!1001 &1528247599
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67418,7 +67789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1589687287}
   - component: {fileID: 1589687286}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyCreator (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67447,7 +67818,7 @@ Transform:
   m_GameObject: {fileID: 1589687285}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -38.1, y: 0, z: -53.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67570,6 +67941,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331338549}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: CloseUpgradeUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -70323,6 +70706,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1659431307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70726,6 +71121,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1331338549}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: CloseUpgradeUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -73182,6 +73589,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4544182412267710, guid: 687de6d3276790f4c8178bc704d07f84, type: 3}
   m_PrefabInstance: {fileID: 2091055788}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1726784351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1726784353}
+  - component: {fileID: 1726784352}
+  m_Layer: 9
+  m_Name: EnemyCreator (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1726784352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726784351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statMultiflyPerMin: 0.2
+--- !u!4 &1726784353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726784351}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 59.1, y: 0, z: 59.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1025802541}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1727277610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74928,6 +75380,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 144566724}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlayUpgradeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1761884960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75381,51 +75845,6 @@ Transform:
   - {fileID: 1780684103}
   m_Father: {fileID: 81648170}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1772093067
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1772093068}
-  - component: {fileID: 1772093069}
-  m_Layer: 0
-  m_Name: EnemyCreator (15)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1772093068
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1772093067}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.4, y: 0, z: 0.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 145861954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1772093069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1772093067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statMultiflyPerMin: 0.2
 --- !u!4 &1773043952 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4150172811052780, guid: 53545434e4ba76743bcc10cc5fedc229, type: 3}
@@ -78375,7 +78794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1859701240}
   - component: {fileID: 1859701239}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyCreator (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78404,7 +78823,7 @@ Transform:
   m_GameObject: {fileID: 1859701238}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -42.7, y: 0, z: -2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83159,51 +83578,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4596521258710676, guid: 9017bf3c7479db0408f0f291df1208d2, type: 3}
   m_PrefabInstance: {fileID: 1784222193}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1994942857
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1994942858}
-  - component: {fileID: 1994942859}
-  m_Layer: 0
-  m_Name: EnemyCreator (13)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1994942858
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1994942857}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.8, y: 0, z: 22.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 145861954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1994942859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1994942857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statMultiflyPerMin: 0.2
 --- !u!1001 &1996217637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85168,51 +85542,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5305bf177cc9ff249ac6a235f7ed3a90, type: 3}
---- !u!1 &2045054464
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2045054465}
-  - component: {fileID: 2045054466}
-  m_Layer: 0
-  m_Name: EnemyCreator (19)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2045054465
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045054464}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.5, y: 0, z: -20.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 145861954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2045054466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045054464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statMultiflyPerMin: 0.2
 --- !u!1001 &2045764657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87549,6 +87878,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1563651730}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2094196168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2094196169}
+  - component: {fileID: 2094196170}
+  m_Layer: 0
+  m_Name: EnemyCreator (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2094196169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094196168}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.1, y: 0, z: -7.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 145861954}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2094196170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094196168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statMultiflyPerMin: 0.2
 --- !u!1001 &2095308277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88743,6 +89117,51 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1284d795bb199fd419c44c1ffdc20c65, type: 3}
+--- !u!1 &2111987608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2111987610}
+  - component: {fileID: 2111987609}
+  m_Layer: 9
+  m_Name: EnemyCreator (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2111987609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111987608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statMultiflyPerMin: 0.2
+--- !u!4 &2111987610
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111987608}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 68, y: 0, z: -47.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1025802541}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2112867606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88976,6 +89395,51 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1264813640}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2115501406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2115501408}
+  - component: {fileID: 2115501407}
+  m_Layer: 9
+  m_Name: EnemyCreator (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2115501407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115501406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc0ee1aba99404bbdaad2f00ab1d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statMultiflyPerMin: 0.2
+--- !u!4 &2115501408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115501406}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 71.6, y: 0, z: -32.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1025802541}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2115641226
 PrefabInstance:
