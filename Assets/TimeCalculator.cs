@@ -28,7 +28,7 @@ public class TimeCalculator : MonoBehaviour
     {
         calcTime = true;
     }
-    public float purposeTime = 60 * 10;
+    float purposeTime = 60 * 10;
     //float purposeTime = 5;
     public float leftT => purposeTime - time;
     void Update()
