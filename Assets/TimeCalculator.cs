@@ -21,7 +21,7 @@ public class TimeCalculator : MonoBehaviour
     {
         calcTime = true;
     }
-    float purposeTime = 60 * 15;
+    float purposeTime = 60 * 10;
     void Update()
     {
         if (purposeTime - time < 0) Debug.Log("게임 종료~");
